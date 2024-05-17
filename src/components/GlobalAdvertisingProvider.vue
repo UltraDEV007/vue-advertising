@@ -58,7 +58,7 @@ useHead({
   ],
 })
 
-onUnmounted(async () => {
+onUnmounted (async () => {
   const { config } = props
   if (config) {
     await new_global_advertising.teardown()
