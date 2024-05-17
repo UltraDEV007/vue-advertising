@@ -60,7 +60,6 @@ watchEffect(
         rootMargin,
       }
     )
-
     onCleanup(stop)
   },
   { flush: 'post' }
