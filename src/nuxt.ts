@@ -9,9 +9,9 @@ export default defineNuxtModule({
       nuxt: '^3.0.0',
     },
   },
+  
   async setup() {
     const resolver = createResolver(import.meta.url)
-
     for (const component of AD_COMPONENTS) {
       await addComponent({
         name: component,
